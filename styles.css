@@ -32,10 +32,25 @@ body {
   min-height: 100vh;
   display: grid;
   place-items: center;
+  padding: 24px;
 }
 
 img {
   max-width: 100%;
+}
+
+h2 {
+  color: var(--black);
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  font-style: normal;
+  line-height: 150%; /* 36px */
+}
+
+p {
+  font-size: clamp(0.75rem, 2vw, 0.875rem);
+  font-style: normal;
+  color: var(--black);
+  line-height: 150%; /* 21px */
 }
 
 .container {
@@ -83,27 +98,15 @@ img {
 }
 
 .category p {
-  color: var(--black);
-  font-size: 14px;
-  font-style: normal;
   font-weight: 800;
-  line-height: 150%; /* 21px */
 }
 
 .date {
-  color: var(--black);
-  font-size: 14px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 150%; /* 21px */
 }
 
 .title {
-  color: var(--black);
-  font-size: 24px;
-  font-style: normal;
   font-weight: 800;
-  line-height: 150%; /* 36px */
 }
 
 .title:hover {
@@ -111,11 +114,8 @@ img {
 }
 
 .description {
-  color: var(--grey);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%; /* 24px */
+  color: #7f7f7f;
+  font-size: clamp(0.875rem, 2vw, 1rem);
 }
 
 .author {
@@ -133,11 +133,8 @@ img {
 }
 
 .author p {
-  color: var(--black);
-  font-size: 14px;
-  font-style: normal;
   font-weight: 800;
-  line-height: 150%; /* 21px */
+  font-size: 1rem;
 }
 
 footer {
@@ -147,8 +144,5 @@ footer {
   transform: translateX(-50%);
   padding: 20px 0;
   text-align: center;
-}
-
-footer p:not(:last-child) {
-  margin-bottom: 15px;
+  width: 100%;
 }
